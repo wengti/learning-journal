@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: black;
+    background-color: #202020;;
 }
 
 *, *::after, *::before {
@@ -12,6 +13,7 @@ body {
 
 main {
     position: relative;
+    background-color: white;
 }
 
 h1, h2, p {
@@ -23,21 +25,29 @@ a {
     color: inherit;
 }
 
-.container {
-    padding: 0 1em;
+.container, 
+.text-container{
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .caption-line-height {
     line-height: 1.3;
 }
 
+.light-gray-color{
+    background-color: rgb(247, 244, 244);
+}
+
 /* Layout - Header */
 header {
-    margin: 1em 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 0.8rem;
+    background-color: white;
 }
 
 .header-icon{
@@ -185,17 +195,58 @@ nav li {
     opacity: 0.2;
 }
 
+
+/* Post-page */
+.post-image {
+    background-image: url('../images/hero-post.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vw;
+    max-height: 500px;
+    margin-top: 1.5em;
+}
+
+.post-date {
+    font-size: 0.8rem;
+    padding-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+.post-container {
+    margin-top: 2em;
+}
+
+.post-paragraph-title{
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.first-post-paragraph-title{
+    padding-top: 1em;
+}
+
+.post-paragraph-title,
+.post-paragraph {
+    margin-top: 1em;
+}
+
+
 /* Recent Post Container */
 .recent-post-container {
     text-align: center;
-    padding-bottom: 0;
+    font-weight: 700;
+    margin-top: 3em;
 }
+
+
+
 
 /* View More */
 .view-more-section {
     font-size: 0.8rem;
     text-align: center;
-    margin: 1em 0;
+    padding-bottom: 1em;
 }
 
 .view-more-link{
@@ -209,6 +260,7 @@ nav li {
     text-align: center;
     color: white;
     padding: 1em 0;
+
     div {
         font-size: 0.8rem;
     }
@@ -218,6 +270,12 @@ nav li {
 
 
 @media (min-width: 480px){
+    .container, 
+    .text-container{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
     .hero-post {
         height: 62.5vw; /*At 62.5% of 480px = 300px, continue to grow from here*/
         max-height: 400px;
@@ -236,5 +294,10 @@ nav li {
     
     .hero-post-caption {
         font-size: 1rem;
+    }
+    
+    .text-container {
+        padding-left: 5em;
+        padding-right: 5em;
     }
 }
