@@ -29,13 +29,14 @@ A simple blog site created, mainly focusing on the application of responsive web
 ## More Images
 
 <div align="center">
-    <img src='./demo-images/hover.png' alt='Website design with interactive hovering effect that stretch and fade out an image when hovered.'>
+    <img src='./demo-images/hover.png' alt='Website design with interactive hovering effect that stretch and fade out an image when hovered.'
+        width="95%">
 </div>
 
 <div align="center">
-    <img src='./demo-images/mobile-1.png' alt='Mobile design for the website.' width="25%">
-    <img src='./demo-images/mobile-2.png' alt='Mobile design for the website with an overlay navigation menu' width="25%">
-    <img src='./demo-images/mobile-3.png' alt='Mobile design for the About Me subpage.' width="25%">
-    <img src='./demo-images/mobile-4.png' alt='Mobile design for the blog post subpage.' width="25%">
+    <img src='./demo-images/mobile-1.png' alt='Mobile design for the website.' width="24%">
+    <img src='./demo-images/mobile-2.png' alt='Mobile design for the website with an overlay navigation menu' width="24%">
+    <img src='./demo-images/mobile-3.png' alt='Mobile design for the About Me subpage.' width="24%">
+    <img src='./demo-images/mobile-4.png' alt='Mobile design for the blog post subpage.' width="24%">
 </div>
 
