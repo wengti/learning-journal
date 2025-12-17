@@ -32,11 +32,26 @@ function handleViewMore() {
 }
 
 function handleWindowSizeChange(){
+    
+    if(window.innerWidth >= 480) {
+        // Hide bars icon
+        document.querySelectorAll('ul a').forEach(elem => elem.style.display = 'block')
+        document.getElementById('bar-icon').style.display = 'none'
+    } 
+    else {
+        // Show bars icon
+        document.querySelectorAll('ul a').forEach(elem => elem.style.display = 'none')
+        document.getElementById('bar-icon').style.display = 'block'   
+    }
+
     if(window.innerWidth >= 768) {
+        //Expand into 6 grid display
         for (let i = 3; i < 6; i++ ){
             blogGridCellArr[i].style.display = 'block'
         }
-    } else {
+    }
+    else {
+        // Collapse into 3 grid display
         for (let i = 3; i < blogGridCellArr.length; i++ ){
             blogGridCellArr[i].style.display = 'none'
             viewMoreBtn.style.display = 'inline-block'
