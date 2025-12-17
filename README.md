@@ -28,8 +28,10 @@ A simple blog site created, mainly focusing on the application of responsive web
 
 ## More Images
 <table>
-    <tr colspans="2">
-        <td><img src='./demo-images/hover.png' alt='Website design with interactive hovering effect that stretch and fade out an image when hovered.'></td>
+    <tr>
+        <td colspans="2">
+            <img src='./demo-images/hover.png' alt='Website design with interactive hovering effect that stretch and fade out an image when hovered.'>
+        </td>
     </tr>
     <tr>
         <td><img src='./demo-images/mobile-1.png' alt='Mobile design for the website.'></td>
