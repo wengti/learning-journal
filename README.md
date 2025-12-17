@@ -38,3 +38,9 @@ A simple blog site created, mainly focusing on the application of responsive web
         <td><img src='./demo-images/mobile-2.png' alt='Mobile design for the website with an overlay navigation menu'></td>
     </tr>
 </table>
+
+<style>
+    table td {
+        text-align: center;
+    }
+</style>
