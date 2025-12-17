@@ -70,6 +70,7 @@ nav li {
     font-weight: 600;
 }
 
+
 /* Hero Post */
 .hero-post {
     background-image: url("../images/hero-post.jpeg");
@@ -275,6 +276,7 @@ nav li {
     text-decoration: underline;
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 /* footer */
@@ -288,6 +290,17 @@ nav li {
         font-size: 0.8rem;
     }
     
+}
+
+/* Navigation Hovering Effect */
+a:hover,
+a:focus {
+    outline: none;
+}
+
+a:hover li,
+a:focus li{
+    text-decoration: underline;
 }
 
 
