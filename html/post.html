@@ -10,6 +10,11 @@
          <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
@@ -19,12 +24,60 @@
                 <div>My Learning Journal</div>
             </div>
             
-            <nav>
+            <nav class="main-nav">
                 <ul>
                     <a href="./index.html"><li>Home</li></a>
                     <a href="./about-me.html"><li>About me</li></a>
+                    <i class="fa-solid fa-bars" id="bar-icon"></i>
                 </ul>
             </nav>
+
+            <div class="overlay" id="overlay">
+            </div>
+
+            <nav class="menu-container" id="menu-container">
+                <ul>
+                    <li class="menu-item-container">
+                        <div class="x-btn" id="x-btn" tabindex="0">X</div>
+                    </li>
+
+                    <a href="#">
+                        <li class="menu-item-container menu-item-container-hover">
+                            Home
+                        </li>
+                    </a>
+                    <a href="./about-me.html">
+                        <li class="menu-item-container menu-item-container-hover">
+                            About me
+                        </li>
+                    </a>
+                    
+                    <li class="menu-item-container menu-item-container-hover"
+                        data-id="blog-expansion">
+                        Blogs <span id="expansion-arrow-container"><i class="fa-solid fa-angle-down" data-id="blog-expansion"></i></span>
+                    </li>
+
+                    <a href="./post.html">
+                        <li class="menu-item-container menu-item-container-hover blog-item-container"
+                            style="display: none;">
+                            Blog one
+                        </li>
+                    </a>
+                    <a href="./post.html">
+                        <li class="menu-item-container menu-item-container-hover blog-item-container"
+                            style="display: none;">
+                            Blog two
+                        </li>
+                    </a>
+                    <a href="./post.html">
+                        <li class="menu-item-container menu-item-container-hover blog-item-container"
+                            style="display: none;">
+                            Blog three
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+
         </header>
 
         <main class="light-gray-color">

@@ -1,11 +1,27 @@
 const viewMoreBtn = document.getElementById('view-more-btn')
 const blogGridCellArr = Array.from(document.getElementsByClassName("blog-grid-link"))
+const overlay = document.getElementById('overlay')
+const menuContainer = document.getElementById('menu-container')
+const blogItemArr = Array.from(document.getElementsByClassName('blog-item-container'))
+let blogExpansionFlag = false
+const expansionArrowContainer = document.getElementById('expansion-arrow-container')
+
 
 handleWindowSizeChange()
 
 document.addEventListener("click", function(event){
     if(event.target.id === 'view-more-btn'){
         handleViewMore()
+    }
+    else if (event.target.id === 'bar-icon'){
+        openOverlay()
+    }
+    else if(event.target.id === 'x-btn' || event.target.id === 'overlay')
+    {
+        closeOverlay()
+    }
+    else if (event.target.dataset.id ==='blog-expansion'){
+        handleBlogExpansion()
     }
 })
 
@@ -31,16 +47,38 @@ function handleViewMore() {
     }
 }
 
+function openOverlay() {
+    overlay.style.display = 'block'
+    menuContainer.style.display = 'block'
+}
+
+function closeOverlay() {
+    overlay.style.display = 'none'
+    menuContainer.style.display = 'none'
+}
+
+function handleBlogExpansion() {
+    if(!blogExpansionFlag){
+        blogItemArr.forEach( blogItem => blogItem.style.display = 'block')
+        expansionArrowContainer.innerHTML = `<i class="fa-solid fa-angle-up" data-id="blog-expansion">`
+    } else {
+        blogItemArr.forEach( blogItem => blogItem.style.display = 'none')
+        expansionArrowContainer.innerHTML = `<i class="fa-solid fa-angle-down" data-id="blog-expansion">`
+    }
+    blogExpansionFlag = !blogExpansionFlag
+}
+
 function handleWindowSizeChange(){
     
     if(window.innerWidth >= 480) {
         // Hide bars icon
-        document.querySelectorAll('ul a').forEach(elem => elem.style.display = 'block')
+        document.querySelectorAll('.main-nav a').forEach(elem => elem.style.display = 'block')
         document.getElementById('bar-icon').style.display = 'none'
+        closeOverlay()
     } 
     else {
         // Show bars icon
-        document.querySelectorAll('ul a').forEach(elem => elem.style.display = 'none')
+        document.querySelectorAll('.main-nav a').forEach(elem => elem.style.display = 'none')
         document.getElementById('bar-icon').style.display = 'block'   
     }
 

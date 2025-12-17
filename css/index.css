@@ -57,22 +57,94 @@ header {
     font-weight: 700;
 }
 
-nav ul {
-    display: flex;
-    gap: 2em;
+ul {
     margin: 0;
     padding: 0;
+}
+
+/* Header - main nav */
+
+.main-nav ul {
+    display: flex;
+    gap: 2em;
     align-items: center;
 }
 
-nav li {
+.main-nav a:hover li,
+.main-nav a:focus li{
+    text-decoration: underline;     
+}
+
+.main-nav i {
+    font-size: large;
+    cursor: pointer;
+}
+
+li {
     list-style: none;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-nav i {
-    font-size: large;
+/* Menu */
+.overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255, 255, 0.5);
+    z-index: 4;
+}
+
+.menu-container{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 40vw;
+    height: 100vh;
+    z-index: 5;
+    border-left: 1px solid gray;
+}
+
+.menu-item-container {
+    display: flex;
+    position: relative;
+    height: 50px;
+    padding: 1em 1em;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+.menu-item-container-hover:hover,
+.menu-container a:focus .menu-item-container{
+    background-color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.blog-item-container {
+    padding: 1em 3em;
+}
+
+
+.x-btn{
+    /* position: absolute;
+    top: 0;
+    right: 0.65em;
+    
+    height: 100%; */
+    margin-left: auto;
+    font-size: 1.2rem;
+}
+
+.x-btn:hover,
+.x-btn:focus{
+    cursor: pointer;
+    color: red;
 }
 
 
@@ -324,16 +396,6 @@ nav i {
     
 }
 
-/* Navigation Hovering Effect */
-a:hover,
-a:focus {
-    outline: none;
-}
-
-a:hover li,
-a:focus li{
-    text-decoration: underline;
-}
 
 /* Show More */
 .initial-hidden {
