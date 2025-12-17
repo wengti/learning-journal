@@ -132,11 +132,6 @@ li {
 
 
 .x-btn{
-    /* position: absolute;
-    top: 0;
-    right: 0.65em;
-    
-    height: 100%; */
     margin-left: auto;
     font-size: 1.2rem;
 }
@@ -155,7 +150,7 @@ li {
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    overflow: hidden; /* Important: prevents image from overflowing */
+    overflow: hidden; 
     position: relative;
     height: 300px;
 
