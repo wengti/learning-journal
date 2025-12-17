@@ -34,7 +34,7 @@ A simple blog site created, mainly focusing on the application of responsive web
         </td>
     </tr>
     <tr>
-        <td style="text-align: center;"><img src='./demo-images/mobile-1.png' alt='Mobile design for the website.'></td>
+        <td align="center"><img src='./demo-images/mobile-1.png' alt='Mobile design for the website.'></td>
         <td style="text-align: center;"><img src='./demo-images/mobile-2.png' alt='Mobile design for the website with an overlay navigation menu'></td>
     </tr>
 </table>
