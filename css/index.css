@@ -269,9 +269,12 @@ nav li {
     padding-bottom: 1em;
 }
 
-.view-more-link{
-    text-decoration: underline;
+.view-more-btn{
+    font-family: inherit;
     font-weight: 700;
+    text-decoration: underline;
+    background-color: white;
+    border: none;
 }
 
 /* footer */
