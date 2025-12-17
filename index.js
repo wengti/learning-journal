@@ -1,3 +1,4 @@
+// Get control of elements
 const viewMoreBtn = document.getElementById('view-more-btn')
 const blogGridCellArr = Array.from(document.getElementsByClassName("blog-grid-link"))
 const overlay = document.getElementById('overlay')
@@ -7,8 +8,10 @@ let blogExpansionFlag = false
 const expansionArrowContainer = document.getElementById('expansion-arrow-container')
 
 
+// Function to run once page is loaded
 handleWindowSizeChange()
 
+// Event Listener for CLICK action
 document.addEventListener("click", function(event){
     if(event.target.id === 'view-more-btn'){
         handleViewMore()
@@ -25,6 +28,7 @@ document.addEventListener("click", function(event){
     }
 })
 
+// Event Listener when window is resized
 window.addEventListener('resize', function(){
     handleWindowSizeChange()
 })
