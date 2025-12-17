@@ -231,6 +231,26 @@ nav li {
     margin-top: 1em;
 }
 
+/* About Me */
+
+.about-me-pfp-container {
+    padding-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me-pfp {
+    width: 180px;
+    border-radius: 90px;
+}
+
+.about-me-title{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+
+
 
 /* Recent Post Container */
 .recent-post-container {
@@ -284,6 +304,13 @@ nav li {
     .blog-grid {
         grid-template-columns: repeat(3, 1fr);
         margin: 2em 0;
+    }
+
+    .about-me-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
     }
 }
 
